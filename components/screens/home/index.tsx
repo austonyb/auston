@@ -1,7 +1,7 @@
-import { DeployButton } from "@/components/deploy";
 import { Footer } from "@/components/footer";
 import * as FadeIn from "@/components/motion/staggers/fade";
 import { Posts } from "@/components/posts";
+import Link from "@/components/link";
 
 const Spacer = () => <div style={{ marginTop: "24px" }} />;
 
@@ -11,21 +11,24 @@ export default function Home() {
       <FadeIn.Item>
         <div className="flex justify-between">
           <div>
-            <h1>Sylph</h1>
-            <h2>Next.js Portfolio Starter</h2>
+            <h1>Auston Youngblood</h1>
+            <h2>Full-Stack Software Engineer and Recovering Creative</h2>
+            <h2><Link href="https://x.com/AustonY" className="underline">@AustonY</Link></h2>
           </div>
         </div>
       </FadeIn.Item>
       <Spacer />
       <FadeIn.Item>
         <p>
-          Sylph is a Next.js Portfolio Starter that you can use to create your own portfolio website. It is designed to be minimal, lightweight, and fast. It is
-          also highly customizable, so you can easily make it your own. Sylph is perfect for developers, designers, and other creatives who want to showcase
-          their work. To start using Sylph, you can follow the guides below.
+          Working at <Link href="https://atomic.financial/" className="underline">Atomic Financial</Link>, builder of <Link href="https://authorbuddy.app" className="underline">AuthorBuddy</Link>
         </p>
       </FadeIn.Item>
+      <Spacer />
       <FadeIn.Item>
-        <Posts category="guides" />
+        <Link href="/resume" text="Resume" underline />
+      </FadeIn.Item>
+      <FadeIn.Item>
+        <Posts category="work" />
       </FadeIn.Item>
       <FadeIn.Item>
         <Posts category="examples" />
@@ -34,7 +37,6 @@ export default function Home() {
       <FadeIn.Item>
         <Footer />
       </FadeIn.Item>
-      <DeployButton />
     </FadeIn.Container>
   );
 }
