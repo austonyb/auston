@@ -1,7 +1,7 @@
 import { Footer } from "@/components/footer";
+import Link from "@/components/link";
 import * as FadeIn from "@/components/motion/staggers/fade";
 import { Posts } from "@/components/posts";
-import Link from "@/components/link";
 
 const Spacer = () => <div style={{ marginTop: "24px" }} />;
 
@@ -13,14 +13,25 @@ export default function Home() {
           <div>
             <h1>Auston Youngblood</h1>
             <h2>Full-Stack Software Engineer and Recovering Creative</h2>
-            <h2><Link href="https://x.com/AustonY" className="underline">@AustonY</Link></h2>
+            <h2>
+              <Link href="https://x.com/AustonY" className="underline">
+                @AustonY
+              </Link>
+            </h2>
           </div>
         </div>
       </FadeIn.Item>
       <Spacer />
       <FadeIn.Item>
         <p>
-          Working at <Link href="https://atomic.financial/" className="underline">Atomic Financial</Link>, builder of <Link href="https://authorbuddy.app" className="underline">AuthorBuddy</Link>
+          Working at{" "}
+          <Link href="https://atomic.financial/" className="underline">
+            Atomic Financial
+          </Link>
+          , builder of{" "}
+          <Link href="https://authorbuddy.app" className="underline">
+            AuthorBuddy
+          </Link>
         </p>
       </FadeIn.Item>
       <Spacer />
