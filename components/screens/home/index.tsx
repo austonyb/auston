@@ -12,7 +12,7 @@ export default function Home() {
         <div className="flex justify-between">
           <div>
             <h1>Auston Youngblood</h1>
-            <h2>Full-Stack Software Engineer and Recovering Creative</h2>
+            <h2>Full-Stack Software Engineer and Creative</h2>
             <h2>
               <Link href="https://x.com/AustonY" className="underline">
                 @AustonY
@@ -25,10 +25,10 @@ export default function Home() {
       <FadeIn.Item>
         <p>
           Working at{" "}
-          <Link href="https://atomic.financial/" className="underline">
-            Atomic Financial
+          <Link href="https://www.strivepharmacy.com/" className="underline">
+            Strive Pharmacy
           </Link>
-          , builder of{" "}
+          , creator of{" "}
           <Link href="https://authorbuddy.app" className="underline">
             AuthorBuddy
           </Link>
