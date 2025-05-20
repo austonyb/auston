@@ -30,8 +30,24 @@ export default function Resume() {
 
         <div className="mb-8">
           <div className="mb-1 flex justify-between">
+            <h3 className="font-medium">Strive Pharmacy | Remote</h3>
+            <span>March 2025 - Present</span>
+          </div>
+          <div className="mb-2 font-medium">Software Engineer</div>
+          <ul className="list-none space-y-2 pl-5">
+            <li className="before:mr-2 before:content-['>']">
+              Masterfully developed and maintained multiple pharmacy automation tools using TypeScript, Next.js, Postgres, and internal bespoke tools
+            </li>
+            <li className="before:mr-2 before:content-['>']">
+              Engaged in building a pharmacy management system using Elixir, Phoenix, and LiveView
+            </li>
+          </ul>
+        </div>
+
+        <div className="mb-8">
+          <div className="mb-1 flex justify-between">
             <h3 className="font-medium">Atomic Fi | Salt Lake City, UT</h3>
-            <span>June 2024 - Present</span>
+            <span>June 2024 - March 2025</span>
           </div>
           <div className="mb-2 font-medium">Software Engineer</div>
           <ul className="list-none space-y-2 pl-5">

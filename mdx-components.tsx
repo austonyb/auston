@@ -10,7 +10,7 @@ import Preview from "@/components/preview";
 import { cn } from "@/lib/cn";
 
 import { MDXRemote } from "next-mdx-remote/rsc";
-import React from "react";
+import React, { type JSX } from "react";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
@@ -64,7 +64,7 @@ const components: MDXComponents = {
   ol: ({ className, ...props }: React.HTMLAttributes<HTMLOListElement>) => {
     if (
       React.Children.toArray(props.children).some(
-        (child) => React.isValidElement(child) && (child as React.ReactElement).props.id?.includes("user-content-fn-"),
+        (child) => React.isValidElement(child) && (child as React.ReactElement<any>).props.id?.includes("user-content-fn-"),
       )
     ) {
       return (
