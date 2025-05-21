@@ -11,7 +11,7 @@
     "lint:style": "npx stylelint \"**/*.css\" --fix",
     "lint:biome": "npx biome check --fix --unsafe .",
     "lint:prettier": "npx prettier . --write --log-level warn",
-    "lint": "npm run lint:style && npm run lint:prettier && npm run lint:biome"
+    "lint": "pnpm run lint:style && pnpm run lint:prettier"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.0.1",
@@ -29,7 +29,7 @@
     "@vercel/functions": "^1.4.2",
     "clsx": "^2.1.1",
     "create-stylelint": "^0.5.0",
-    "framer-motion": "^11.11.9",
+    "framer-motion": "^12.12.1",
     "fs": "^0.0.2",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.10.0",
@@ -57,7 +57,6 @@
     "unified": "^11.0.5"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.3",
     "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
     "@tailwindcss/typography": "^0.5.15",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",

@@ -1,7 +1,8 @@
-"use client";;
-import styles from "../styles.module.css";
+"use client";
 
 import type { JSX } from "react";
+
+import styles from "../styles.module.css";
 
 interface Props extends React.HTMLProps<HTMLDivElement> {
   href: string;
@@ -9,7 +10,9 @@ interface Props extends React.HTMLProps<HTMLDivElement> {
 
 function FootnoteForwardReference({ href, children }: Props): JSX.Element {
   const scroll = () => {
-    const footnote = document.querySelector(`[id="${href.replace("fn-", "fnref-")}"]`);
+    const footnote = document.querySelector(
+      `[id="${href.replace("fn-", "fnref-")}"]`,
+    );
 
     if (footnote) {
       window.scrollTo({

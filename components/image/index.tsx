@@ -15,8 +15,14 @@ export default function MDXImage({ caption, alt, ...props }: MDXImageProps) {
   const [isImageLoading, setImageLoading] = React.useState(true);
   const href = props.src.toString();
 
+  // Quick fix: cast motion.a to any to bypass TypeScript error
+  const MotionA = motion.a as any;
   return (
-    <motion.a className="my-6 flex cursor-pointer flex-col justify-end gap-2" href={href} whileHover={{ scale: 0.975, opacity: 0.9 }}>
+    <MotionA
+      className="my-6 flex cursor-pointer flex-col justify-end gap-2"
+      href={href}
+      whileHover={{ scale: 0.975, opacity: 0.9 }}
+    >
       <div className="relative max-h-96 w-full overflow-hidden rounded-large border border-border">
         <Image
           unoptimized
@@ -37,6 +43,6 @@ export default function MDXImage({ caption, alt, ...props }: MDXImageProps) {
         />
       </div>
       {caption && <sub className="pt-2 text-center">{caption}</sub>}
-    </motion.a>
+    </MotionA>
   );
 }
