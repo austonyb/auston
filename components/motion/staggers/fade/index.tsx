@@ -32,9 +32,10 @@ const item = {
   },
 };
 
-function Container({ children, className }: React.HTMLProps<HTMLDivElement>) {
+function Container(props: React.ComponentPropsWithoutRef<typeof motion.div>) {
+  const { children, ...rest } = props;
   return (
-    <motion.div variants={container} initial="hidden" animate="show" className={className}>
+    <motion.div variants={container} initial="hidden" animate="show" {...rest}>
       {children}
     </motion.div>
   );
