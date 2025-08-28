@@ -25,12 +25,8 @@ export default function Home() {
       <FadeIn.Item>
         <p>
           Working at{" "}
-          <Link href="https://www.strivepharmacy.com/" className="underline">
-            Strive Pharmacy
-          </Link>
-          , creator of{" "}
-          <Link href="https://authorbuddy.app" className="underline">
-            AuthorBuddy
+          <Link href="https://www.rxvortex.com/" className="underline">
+            RX Vortex
           </Link>
         </p>
       </FadeIn.Item>
