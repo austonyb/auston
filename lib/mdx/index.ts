@@ -24,6 +24,10 @@ function readFile(filePath: string): Post | null {
 }
 
 function getFiles(dir: string): string[] {
+  if (!fs.existsSync(dir)) {
+    return [];
+  }
+
   try {
     return fs.readdirSync(dir).filter((file) => path.extname(file) === ".mdx");
   } catch (error) {
