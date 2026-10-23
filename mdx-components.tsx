@@ -185,6 +185,11 @@ export function MDX(props: JSX.IntrinsicAttributes & MDXRemoteProps) {
       {...props}
       components={components}
       options={{
+        // Author MDX uses JSX expressions such as width={500}. v6 removes
+        // those when blockJS stays at its default of true. This content is
+        // trusted, so expressions stay enabled and dangerous calls stay blocked.
+        blockJS: false,
+        blockDangerousJS: true,
         mdxOptions: {
           remarkPlugins: [remarkGfm],
           rehypePlugins: [
