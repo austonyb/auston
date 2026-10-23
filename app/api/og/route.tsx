@@ -1,14 +1,15 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 
 type Parameters = {
   title?: string;
 };
 
 /*
- * To assist with generating dynamic Open Graph (OG) images, you can use the Vercel @vercel/og library to compute and generate social card images using Vercel Edge Functions.
- * @see: https://vercel.com/docs/functions/og-image-generation
+ * To assist with generating dynamic Open Graph (OG) images, you can use next/og
+ * ImageResponse to compute and generate social card images on the Node.js runtime.
+ * @see: https://nextjs.org/docs/app/api-reference/functions/image-response
  *
  * You can use the following code sample to explore using parameters and different content types with next/og.
  * @see: https://vercel.com/guides/dynamic-text-as-image
