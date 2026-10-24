@@ -92,7 +92,8 @@
       "picomatch@>=4 <5": "4.0.7",
       "postcss@>=8 <9": "8.5.31",
       "source-map-js@>=1 <2": "1.2.2",
-      "serialize-javascript": "7.1.4"
+      "serialize-javascript": "7.1.4",
+      "zod@>=4 <4.6.6": "4.6.6"
     }
   },
   "overrides": {
