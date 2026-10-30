@@ -26,6 +26,7 @@ overrides:
   source-map-js@>=1 <2: 1.2.2
   serialize-javascript: 7.1.4
   zod@>=4 <4.6.6: 4.6.6
+  decode-uri-component@<0.5.1: 0.5.1
 
 importers:
   .:
@@ -2170,12 +2171,12 @@ packages:
         integrity: sha512-O8x12RzrUF8xyVcY0KJowWsmaJxQbmy0/EtnNtHRpsOcT7dFk5W598coHqBVpmWo1oQQfsCqfCmkZN5DJrZVdg==,
       }
 
-  decode-uri-component@0.2.2:
+  decode-uri-component@0.5.1:
     resolution:
       {
-        integrity: sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==,
+        integrity: sha512-vWHQkXgg2cE3BB4rR0c+PYw9BCQzLoNIRMI7AunIkZst74tw/vpPp7VLoYtsR/cy1f55g3XDWUslfeCZjiZJyA==,
       }
-    engines: { node: ">=0.10" }
+    engines: { node: ">=14.16" }
 
   deep-equal@2.2.3:
     resolution:
@@ -7218,7 +7219,7 @@ snapshots:
     dependencies:
       character-entities: 2.0.2
 
-  decode-uri-component@0.2.2: {}
+  decode-uri-component@0.5.1: {}
 
   deep-equal@2.2.3:
     dependencies:
@@ -9496,7 +9497,7 @@ snapshots:
   source-map-resolve@0.6.0:
     dependencies:
       atob: 2.1.2
-      decode-uri-component: 0.2.2
+      decode-uri-component: 0.5.1
 
   source-map-support@0.5.21:
     dependencies:

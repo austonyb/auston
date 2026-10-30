@@ -93,7 +93,8 @@
       "postcss@>=8 <9": "8.5.31",
       "source-map-js@>=1 <2": "1.2.2",
       "serialize-javascript": "7.1.4",
-      "zod@>=4 <4.6.6": "4.6.6"
+      "zod@>=4 <4.6.6": "4.6.6",
+      "decode-uri-component@<0.5.1": "0.5.1"
     }
   },
   "overrides": {
